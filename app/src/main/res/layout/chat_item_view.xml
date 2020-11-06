@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/chatIcon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/chatName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chatLastMessageTime"
+        app:layout_constraintStart_toStartOf="@+id/chatLastMessage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/chatLastMessageTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="chat_Last_Message_Time"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/chatName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chatName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/chatLastMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Chat_Last_Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chatMessageCount"
+        app:layout_constraintStart_toEndOf="@+id/chatIcon"
+        app:layout_constraintTop_toBottomOf="@+id/chatName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/chatMessageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/chat_message_count_background"
+        android:paddingHorizontal="5dp"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="@id/chatLastMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chatLastMessage" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/messageTint"
+        app:layout_constraintStart_toEndOf="@id/chatIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
