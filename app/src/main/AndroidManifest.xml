@@ -11,17 +11,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Messenger">
-        <activity android:name=".Activity.SingleChatActivity"></activity>
-        <activity
-            android:name=".Activity.HomeActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Messenger.NoActionBar">
+        <activity android:name=".Activity.SignUpActivty"
+            android:theme="@style/Theme.Messenger.NoActionBar"/>
+        <activity android:name=".Activity.Splash"
+            android:theme="@style/Theme.Messenger.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activity.SingleChatActivity"
+            android:theme="@style/Theme.Messenger.NoActionBar" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Messenger.NoActionBar" />
     </application>
 
 </manifest>

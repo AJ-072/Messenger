@@ -6,4 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".Activity.SingleChatActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/single_chat_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/teal_200"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/chat_option_menu">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/chat_user_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/chat_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/app_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/chat_user_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/chat_user_icon"
+                app:layout_constraintTop_toTopOf="@id/chat_user_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav_coordinate"
+        app:layout_constraintTop_toBottomOf="@id/single_chat_appbar"
+        tools:listitem="@layout/received_message_view" />
+
+    <include
+        layout="@layout/chat_bottom_edittext_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
