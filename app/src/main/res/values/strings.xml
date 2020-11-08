@@ -22,4 +22,6 @@
     <string name="delete_contact">Delete Contact</string>
     <string name="clear_chat">Clear Chat</string>
     <string name="block_chat">Block Chat</string>
+    <string name="otp_dialog">Please, enter 4-digit code we sent on your number as SMS.</string>
+    <string name="resend_otp">Resend OTP?</string>
 </resources>

@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="teal_500">#48F3D1</color>
+    <color name="sky_blue">#0AC0D6</color>
     <color name="green">#31DD3A</color>
     <color name="textColor">#fff</color>
     <color name="messageTint">#727272</color>
