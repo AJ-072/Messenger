@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/edittext_background"
     android:backgroundTint="@color/white"
     android:paddingHorizontal="10dp">
@@ -19,22 +19,25 @@
 
     <com.aj.android.messenger.Activity.OtpEditText
         android:id="@+id/otp_number"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="12dp"
         android:cursorVisible="false"
         android:digits="1234567890"
-        android:layout_marginTop="15dp"
         android:inputType="number"
         android:maxLength="4"
         android:textIsSelectable="false"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/otp_dialog" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/otp_resend_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:enabled="false"
         android:text="@string/resend_otp"
         android:textSize="16sp"
@@ -43,17 +46,35 @@
         app:layout_constraintTop_toBottomOf="@+id/otp_number" />
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/opt_resend_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
         android:text="1:00"
-        android:id="@+id/opt_resend_count"
         android:textColor="@color/sky_blue"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/otp_resend_text"
         app:layout_constraintStart_toEndOf="@id/otp_resend_text"
-        app:layout_constraintTop_toBottomOf="@id/otp_number"/>
+        app:layout_constraintTop_toTopOf="@+id/otp_resend_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/green"
+        android:drawableEnd="@drawable/ic_next_24"
+        android:drawablePadding="5dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Send OTP"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_resend_text" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
