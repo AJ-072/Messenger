@@ -48,6 +48,7 @@
         android:drawableEnd="@drawable/ic_next_24"
         android:paddingHorizontal="20dp"
         android:text="Send OTP"
+        android:id="@+id/next_button"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

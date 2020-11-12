@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Messenger">
-        <activity android:name=".Activity.SignUpActivty"
+        <activity android:name=".Activity.SignUpActivity"
             android:theme="@style/Theme.Messenger.NoActionBar"/>
         <activity android:name=".Activity.Splash"
             android:theme="@style/Theme.Messenger.Splash">
