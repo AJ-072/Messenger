@@ -25,4 +25,7 @@
     <string name="otp_dialog">Please, enter 4-digit code we sent on your number as SMS.</string>
     <string name="resend_otp">Resend OTP?</string>
     <string name="sign_up">SIGN UP</string>
+    <string name="name">Name</string>
+    <string name="about">About</string>
+    <string name="phone_number">Phone Number</string>
 </resources>

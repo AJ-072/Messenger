@@ -37,12 +37,24 @@
             app:layout_constraintTop_toTopOf="parent"
             app:shapeAppearanceOverlay="@style/circleImageView"
             app:srcCompat="@mipmap/ic_launcher_round" />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/user_profile_pic_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_message_count_background"
+            android:backgroundTint="@color/messageTint"
+            android:padding="5dp"
+            android:src="@drawable/ic_camera_24"
+            app:layout_constraintBottom_toBottomOf="@+id/user_profile_pic"
+            app:layout_constraintEnd_toEndOf="@+id/user_profile_pic"
+            app:shapeAppearanceOverlay="@style/circleImageView" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/first_name_input_layout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_profile_24"
             android:hint="First Name"
             android:layout_marginTop="20dp"
             app:errorEnabled="true"
@@ -64,6 +76,7 @@
             android:layout_height="wrap_content"
             android:hint="Last Name"
             app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_profile_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/first_name_input_layout">
@@ -80,6 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Phone Number"
+            app:startIconDrawable="@drawable/ic_call_24"
             android:enabled="false"
             app:errorEnabled="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +104,7 @@
                 android:id="@+id/phone_number_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textAutoComplete" />
+                android:inputType="phone" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/id_input_layout"
@@ -98,6 +112,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="ID"
+            app:startIconDrawable="@drawable/ic_email_24"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleDrawable="@drawable/ic_edit_32"
             app:errorEnabled="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
