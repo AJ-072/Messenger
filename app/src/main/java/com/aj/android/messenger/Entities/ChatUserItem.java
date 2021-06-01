@@ -2,7 +2,7 @@ package com.aj.android.messenger.Entities;
 
 public class ChatUserItem {
     private String lastMessage;
-    private String name;
+    private final String name;
     private long time;
     private int count;
 

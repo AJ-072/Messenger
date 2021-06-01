@@ -1,6 +1,5 @@
 package com.aj.android.messenger.BottomSheet;
 
-import android.app.Dialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +22,7 @@ public class OtpVerificationLayout extends BottomSheetDialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v= inflater.inflate(R.layout.otp_bottom_sheet,container);
+        View v = inflater.inflate(R.layout.otp_bottom_sheet, container);
         return v;
     }
 }

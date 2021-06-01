@@ -16,7 +16,7 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        if (position==0)
+        if (position == 0)
             return new ChatsFragment();
         else
             return new StatusFragment();
@@ -24,7 +24,7 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
 }

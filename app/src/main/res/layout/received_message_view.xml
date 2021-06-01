@@ -10,7 +10,7 @@
         android:id="@+id/userIcon"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_margin="5dp"
         app:shapeAppearanceOverlay="@style/circleImageView"
         app:srcCompat="@mipmap/ic_launcher"

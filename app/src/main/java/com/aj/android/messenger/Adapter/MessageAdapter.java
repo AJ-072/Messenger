@@ -1,6 +1,5 @@
 package com.aj.android.messenger.Adapter;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,13 +14,12 @@ import com.aj.android.messenger.R;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.text.MessageFormat;
 import java.util.ArrayList;
 
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHolder> {
-    private ArrayList<Message> data = new ArrayList<>();
     private static final String TAG = "MessageAdapter";
-    
+    private ArrayList<Message> data = new ArrayList<>();
+
     @NotNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -38,7 +36,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position){
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.message.setText(data.get(position).getMessage());
         holder.time.setText(Common.getTime(data.get(position).getTime()));
     }
@@ -54,12 +52,13 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView message,time;
+        private final TextView message;
+        private final TextView time;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             message = itemView.findViewById(R.id.message);
-            time= itemView.findViewById(R.id.timeStamp);
+            time = itemView.findViewById(R.id.timeStamp);
         }
     }
 }

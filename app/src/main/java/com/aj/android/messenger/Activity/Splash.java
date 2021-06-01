@@ -10,10 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.aj.android.messenger.R;
 
 public class Splash extends AppCompatActivity {
-    private SharedPreferences preferences;
     public static final String SIGNED_IN = "signed_in";
     public static final String APP_PREFERENCE = "Messenger_preference";
     public boolean loggedIn = false;
+    private SharedPreferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

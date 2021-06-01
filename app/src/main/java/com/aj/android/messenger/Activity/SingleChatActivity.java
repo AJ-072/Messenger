@@ -1,16 +1,15 @@
 package com.aj.android.messenger.Activity;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.widget.Toolbar;
-
 import com.aj.android.messenger.R;
-import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
 
 public class SingleChatActivity extends AppCompatActivity {
     private MaterialToolbar appBarLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

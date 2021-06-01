@@ -5,13 +5,15 @@
         android:id="@+id/messages"
         android:icon="@drawable/ic_message_24"
         android:title="Messages" />
+
+     <item android:id="@+id/add_status"
+        android:title="Add Status"
+        android:icon="@android:drawable/ic_input_add"/>
     <item
         android:id="@+id/add_friends"
         android:icon="@drawable/ic_person_add_24"
         android:title="Add Friends"/>
-    <item android:id="@+id/add_status"
-        android:title="Add Status"
-        android:icon="@android:drawable/ic_input_add"/>
+
     <item
         android:id="@+id/notifications"
         android:icon="@drawable/ic_notifications_24"

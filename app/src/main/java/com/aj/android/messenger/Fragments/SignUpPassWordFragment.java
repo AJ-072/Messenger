@@ -20,7 +20,7 @@ public class SignUpPassWordFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v= inflater.inflate(R.layout.sign_up_third,container,false);
+        View v = inflater.inflate(R.layout.sign_up_third, container, false);
         return v;
     }
 

@@ -19,13 +19,13 @@ public class SignUpPhoneNumberFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v=inflater.inflate(R.layout.sign_up_first,container,false);
-        next= v.findViewById(R.id.next_button);
+        View v = inflater.inflate(R.layout.sign_up_first, container, false);
+        next = v.findViewById(R.id.next_button);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                OtpVerificationLayout otpVerificationLayout= OtpVerificationLayout.newInstance();
-                otpVerificationLayout.show(getChildFragmentManager(),this.toString());
+                OtpVerificationLayout otpVerificationLayout = OtpVerificationLayout.newInstance();
+                otpVerificationLayout.show(getChildFragmentManager(), this.toString());
             }
         });
         return v;

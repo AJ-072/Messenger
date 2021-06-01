@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Common {
-    public  static String getTime(long time){
+    public static String getTime(long time) {
         return SimpleDateFormat.getTimeInstance(DateFormat.SHORT).format(new Date(time));
     }
 }
